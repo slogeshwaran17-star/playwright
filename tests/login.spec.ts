@@ -13,7 +13,7 @@ test.describe('Login Tests', () => {
   });
   test('Invalid username', async ({ page }) => {
     await login(page, 'sgtfudent', 'Password123');
-    await expect(page.locator('#error')).toHaveText("Your userfname is invalid!");
+    await expect(page.locator('#error')).toHaveText("Your username is invalid!");
 
   });  
   });
